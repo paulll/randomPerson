@@ -1,0 +1,48 @@
+html, body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+
+.box-shadow (@color: gray) {
+	-webkit-box-shadow: 0 0 2px 0px @color;
+	-moz-box-shadow: 0 0 2px 0px @color;
+	-ms-box-shadow: 0 0 2px 0px @color;
+	-o-box-shadow: 0 0 2px 0px @color;
+	box-shadow: 0 0 2px 0px @color;
+}
+
+#main {
+
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	margin-left: -220px;
+	background: whitesmoke;
+
+	width: 400px;
+	padding: 20px;
+
+	.head {
+		font-size: 30px;
+	}
+
+	input {
+		padding: 20px 30px;
+		outline: none;
+		border: 0;
+		color: gray;
+		background: white;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		margin: 10px 0px;
+
+		.box-shadow;
+
+		&:focus {
+			.box-shadow(black);
+		}
+
+	}
+}
