@@ -189,7 +189,7 @@ function main () {
 
 	person.telephone = "+7"+tel.shift()+(tel.shift() + Math.floor(tel.shift()*Math.random()));
 
-	person.dateOfBirth = [random(0, 28), random(0, 11) + 1, random(1960, 1999)].map(toFixed).join('.');
+	person.dateOfBirth = [random(0, 27) + 1, random(0, 11) + 1, random(1960, 1999)].map(toFixed).join('.');
 
 	person.password = Math.random() > 0.3 ? genWord() : genWord() + person.dateOfBirth.slice(-2);
 
