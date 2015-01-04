@@ -203,7 +203,8 @@ function main () {
 		login = [Math.random()>0.7?person.name.split(' ')[1]:person.name.split(' ')[0], Math.random()>0.1?person.dateOfBirth.slice(-2):''].map(translit).join('');
 	}
 
-	person.email = login + randomItem('@google.com @mail.ru @bk.ru @list.ru @ya.ru @yandex.ru @rambler.ru @inbox.ru'.split(' '));
+	// Лучше написать логин, т.к. почту автоматически регистрировать мне лень
+	person.email = login; // + randomItem('@google.com @mail.ru @bk.ru @list.ru @ya.ru @yandex.ru @rambler.ru @inbox.ru'.split(' '));
 
 	dicts.addr[zone](function (e) {
 
