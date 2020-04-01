@@ -43,7 +43,7 @@ var dicts = {
 				}
 			};
 			var scr = document.createElement('script');
-			scr.src = 'http://geocode-maps.yandex.ru/1.x/?geocode='+pos.x+','+pos.y+'&format=json&callback=mapcb&kind=house&results=1';
+			scr.src = 'https://geocode-maps.yandex.ru/1.x/?geocode='+pos.x+','+pos.y+'&format=json&callback=mapcb&kind=house&results=1';
 			document.getElementsByTagName('head')[0].appendChild(scr);
 		},
 		msk: function (callback) {
@@ -62,7 +62,7 @@ var dicts = {
 			};
 
 			var scr = document.createElement('script');
-			scr.src = 'http://geocode-maps.yandex.ru/1.x/?geocode='+pos.x+','+pos.y+'&format=json&callback=mapcb&kind=house&results=1';
+			scr.src = 'https://geocode-maps.yandex.ru/1.x/?geocode='+pos.x+','+pos.y+'&format=json&callback=mapcb&kind=house&results=1';
 			document.getElementsByTagName('head')[0].appendChild(scr);
 		},
 		other: function (callback) {
@@ -81,7 +81,7 @@ var dicts = {
 			};
 
 			var scr = document.createElement('script');
-			scr.src = 'http://geocode-maps.yandex.ru/1.x/?geocode='+pos.x+','+pos.y+'&format=json&callback=mapcb&kind=house&results=1';
+			scr.src = 'https://geocode-maps.yandex.ru/1.x/?geocode='+pos.x+','+pos.y+'&format=json&callback=mapcb&kind=house&results=1';
 			document.getElementsByTagName('head')[0].appendChild(scr);
 		}
 	},
@@ -125,7 +125,7 @@ function randomDot (x, y, R) {
 function $(a){return document.getElementById(a)};
 
 // Функция, генерирующая легкозапоминаемые пароли. 
-// Проверьте сами: http://jsfiddle.net/paulll/vrGE6/
+// Проверьте сами: https://jsfiddle.net/paulll/vrGE6/
 function genWord() {
 
 	function rand(max) {
